@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo</h1>
+    <button id="rojo">Rojo</button>
+    <button id="verde">Verde</button>
+    <button id="azul">Azul</button>
+    <button id="morado">Morado</button>
+    <button id="naranja">Naranja</button>
+</body>
+<script>
+    const titulo = document.getElementById('titulo');
+    const rojo = document.getElementById('rojo');
+    const verde = document.getElementById('verde');
+    const azul = document.getElementById('azul');
+    const morado = document.getElementById('morado');
+    const naranja = document.getElementById('naranja');
+
+//addEventListener sirve para registrar el click de cada
+    rojo.addEventListener('click', ()=> {
+        titulo.style.color='red';
+    });
+
+     azul.addEventListener('click', ()=> {
+        titulo.style.color='blue';
+    });
+
+     verde.addEventListener('click', ()=> {
+        titulo.style.color='green';
+    });
+
+    morado.addEventListener('click', ()=> {
+        titulo.style.color='violet';
+    });
+
+     naranja.addEventListener('click', ()=> {
+        titulo.style.color='orange';
+    });
+
+
+
+</script>
+</html>
