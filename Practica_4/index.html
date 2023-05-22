@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Presiona Enter para poner la pagina color rojo</h1>
+    <h1>Presiona Ctrl + Enter para poner la pagina sea color azul</h1>
+</body>
+
+<script>
+    window.addEventListener("keydown", function(e) {
+        if(e.key =="Enter"){
+            document.body.style.backgroundColor= "red";
+        }
+        if(e.key =="Enter" && e.ctrlKey){
+            document.body.style.backgroundColor= "blue"; 
+        }
+
+    });
+
+    window.addEventListener("keyup", function(e) {
+        if(e.key =="Enter"){
+            document.body.style.background= " "; 
+
+        }
+
+    })
+        
+       
+    
+</script>
+</html>
